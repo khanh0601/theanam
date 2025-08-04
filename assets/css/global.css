@@ -1,0 +1,222 @@
+*{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+html {
+  font-size: 0.5787037037vw;
+}
+.kl_container{
+  width: 100%;
+  max-width: 100%;
+  padding-inline: var(--padding-container);
+}
+:root {
+  --padding-container : 7.8rem;
+}
+body{
+  font-family: "Open Sans";
+    font-size: 1.6rem;
+    color: #545454;
+}
+.img_full img{
+  width: 100%;
+  object-fit: cover;
+}
+.img_fullfill img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@media only screen and (max-width: 991px) {
+  :root {
+    --padding-container : 4rem;
+  }
+  html {
+    font-size: 1.30208333333vw;
+  }
+}
+@media only screen and (max-width: 767px) {
+  :root {
+    --padding-container : 2rem;
+  }
+  html {
+    font-size: 2.27272727273vw;
+  }
+}
+  html.lenis, html.lenis body {
+    height: auto;
+    margin: 0;
+  }
+  .hover-un {
+  	position: relative;
+  }
+  .hover-arr:hover .ic-arr-main {
+    transform: translateX(100%);
+    transition: transform .4s ease;
+  }
+  .hover-arr:hover .ic-arr-clone {
+    transform: translateX(0%);
+    transition: transform .4s ease;
+  }
+  .hover-group:hover .hover-item {
+  	opacity: 0.6;
+  }
+  .hover-group .hover-item:hover {
+  	opacity: 1;
+  }
+  .line-inner.line-inner-hover {
+    background-color: currentColor;
+    position: relative;
+}
+.line {
+      width: 100%;
+    height: 1px;
+    &.line-md {
+      height: .2rem;
+    }
+}
+.line-arr {
+    display: flex;
+    overflow: hidden;
+}
+.line.line-main {
+    background-color: currentColor;
+    transition-property: transform;
+    transition-duration: .4s;
+    transition-timing-function: ease;
+    flex: none;
+}
+.line.line-clone {
+  flex: none;
+    background-color: currentColor;
+    transition-property: transform;
+    transition-duration: .4s;
+    transition-timing-function: ease;
+    overflow: hidden;
+    transform: translate(calc(-200% - 2rem));
+}
+  .hover-un .line-inner-hover {
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .6s ease;
+    width: 100%;
+    height: 100%;
+  }
+  .hover-un .hover-un-inner:nth-child(2) .line-inner-hover {
+    transition-delay: .1s;
+    transition-duration: .5s;
+  }
+  .hover-un:hover .line-inner-hover {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+   .hover-arr:hover .line-main {
+  	transform: translateX(calc(100% + 2rem));
+  }
+  .hover-arr:hover .line-clone{
+  	transform: translateX(-100%);
+  }
+  .line.line-hover {
+    position: absolute;
+    bottom: 0;
+    overflow: hidden;
+}
+.btn-outline {
+    color: #C09C6B !important;
+    border: 1px solid #C09C6B;
+    transition: .4s ease background-color, .4s ease color;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    span {
+        position: relative;
+        z-index: 2;
+    }
+
+    &:after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        transform: translateX(-100%);
+        transition: .4s ease all;
+        background-color: currentColor;
+    }
+
+    &:hover:after {
+        transform: translateX(0);
+    }
+
+    &:hover {
+        color: black !important;
+    }
+}
+.df_hide_onload {
+  opacity: 0;
+}
+  .lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+  }
+
+  .lenis.lenis-smooth [data-lenis-prevent] {
+    overscroll-behavior: contain;
+  }
+
+  .lenis.lenis-stopped {
+    overflow: hidden;
+  }
+
+.txt_12{
+  font-size: 1.2rem;
+  line-height: 1em;
+}
+.txt_13{
+  font-size: 1.3rem;
+  line-height: 1.3em;
+}
+.txt_14{
+  font-size: 1.4rem;
+  line-height: 1.82em;
+}
+.txt_15{
+  font-size: 1.5rem;
+  line-height: 1.66667em;
+}
+.txt_16{
+  font-size: 1.6rem;
+  line-height: 1.1em;
+}
+.txt_20{
+  font-size: 2rem;
+  line-height: 1;
+}
+.txt_25{
+  font-size: 2.5rem;
+  line-height: 1em;
+}
+.txt_32{
+  font-size: 3.2rem;
+  line-height: 1.2em;
+}
+.txt_70{
+  font-size: 7rem;
+  line-height: 1.2;
+}
+a{
+  text-decoration: none;
+}
+.txt_center{
+  text-align: center;
+}
+h1, h2, h3{
+  margin: 0;
+}
+h1{
+    font-family: garamond-premier-pro-display;
+}
+.link_hover{
+   transition: all .4s ease;
+  &:hover{
+            color: #fff;
+            background-color: #373d3f;
+        }
+}
