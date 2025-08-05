@@ -77,7 +77,7 @@
         padding-inline: 1rem;
 }
 .header_logo {
- height: 10rem;
+ height: 9rem;
  img {
     height: 100%;
  }
@@ -100,7 +100,7 @@
 }
 .muine_intro_info{
     width: 42.055%;
-    margin-top: 15.3rem;
+    margin-top: 3rem;
 }
 .muine_intro_info_subtitle{
     letter-spacing: .15em;
@@ -178,9 +178,24 @@ right: .2rem;
 .mySwiper .muine_intro_slider_item {
     opacity: .5;
     cursor: pointer;
+    aspect-ratio: 12/8;
+}
+.mySwiper2 .muine_intro_slider_item{
+    aspect-ratio: 1012 / 674;
+
+}
+.muine_intro_slider_inner{
+    height: auto;
+}
+.muine_intro_slider{
+    height: auto;
 }
 
 /* content */
+#map {
+      height: 400px;
+      width: 100%;
+    }
 .muine_content{
     margin-top: 11.5rem;
 }
@@ -384,7 +399,7 @@ right: .2rem;
 .muine_story_social_inner{
     display: flex;
     max-width: 50rem;
-    justify-content: space-between;
+    justify-content: center;
     margin-inline: auto;
 }
 .muine_story_social_camranh_txt{
